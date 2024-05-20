@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="baseball.html">Baseball</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="basketball.html">Basketball</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="football.html">Football</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="add_sport.html">Add a Sport</a>
-          </li>
-        </ul>
+  <div class="card w-50 ">
+    <label class="form-text-label" for="FirstName">First Name</label>
+    <input type="tex" class="form-text-input" id="FirstName">
+    
+    <label class="form-text-label" for="FirstName">Last Name</label>
+    <input type="tex" class="form-text-input" id="LastName">
+
+    <label class="form-text-label" for="PhoneNumber">PhoneNumber</label>
+    <input type="tex" class="form-text-input" id="PhoneNumber">
+   
+
+    <table id="myTable" class="table table-dark table-striped table-hover table-sm">
+
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Phone Number</th>
+      </tr>
+
+  </table>
+<button id="add" class="btn btn-primary">Add person</button>
   
-      </div>
-    </nav>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="index.html"></script>
+    <script src="index.js"></script>
 </body>
 </html>
