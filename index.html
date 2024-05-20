@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="card w-50 ">
+  <div class="card w-50 p-5 m-5  col d-flex justify-content-center">
+    <h2 class="text-center">Phonebook App</h2>
     <label class="form-text-label" for="FirstName">First Name</label>
     <input type="tex" class="form-text-input" id="FirstName">
-    
+
     <label class="form-text-label" for="FirstName">Last Name</label>
     <input type="tex" class="form-text-input" id="LastName">
 
-    <label class="form-text-label" for="PhoneNumber">PhoneNumber</label>
+    <label class="form-text-label" for="PhoneNumber">Phone Number</label>
     <input type="tex" class="form-text-input" id="PhoneNumber">
-   
+    <button id="add" class="btn btn-primary mt-5">Add person</button>
+</div>
 
-    <table id="myTable" class="table table-dark table-striped table-hover table-sm">
+<div class="ccard w-50 m-5  col d-flex justify-content-center">
 
+    <table id="myTable" class="table table-striped table-hover table-sm">
       <tr>
         <th scope="col">#</th>
         <th scope="col">First Name</th>
         <th scope="col">Last Name</th>
         <th scope="col">Phone Number</th>
       </tr>
+    </table>
 
-  </table>
-<button id="add" class="btn btn-primary">Add person</button>
+  </div>
   
+
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
